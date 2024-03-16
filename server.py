@@ -6,7 +6,7 @@ app = FastAPI()
 
 # Serve files from the "assets" folder
 app.mount("/assets", StaticFiles(directory="assets"), name="assets")
-app.mount("/video", StaticFiles(directory="./video"), name="video")
+app.mount("/video", StaticFiles(directory="video"), name="video")
 
 
 @app.get("/")
